@@ -1,0 +1,40 @@
+h1{text-align:center; color:maroon;}
+body{background-color:palegoldenrod;}
+button
+{
+    background-color:palegoldenrod;
+    text-align:center; 
+    width:370px; 
+    padding:10px; 
+    margin-top:10px; 
+    border-radius:5px; 
+    border:1px solid maroon;
+    font-size: large;
+}
+
+input
+{
+    text-align:center; 
+    width:350px; 
+    padding:10px; 
+    margin-top:10px; 
+    border-radius:5px; 
+    border:1px solid maroon;
+}
+
+.container
+{
+    width:370px;
+    background:white;
+    padding:20px;
+    margin:50px auto;
+    border-radius:10px;
+}
+
+label
+{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+

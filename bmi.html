@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BMI Calculator </title>
+        <!-- <link rel="stylesheet" href="bmi.css"> -->
+        <script src="bmi.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    
+    <body class="bg-yellow-100">
+        <form>
+            <div class="w-[370px] bg-white p-5 mx-auto mt-[50px] rounded-[10px]">
+                <h1 class="text-center text-maroon text-2xl font-bold"> 
+                    What is my BMI? Calculate your body mass index below: 
+                </h1>
+
+                <label class="block mt-2 font-bold" for = "weight" >Please enter your weight: </label> 
+                <input class="text-center w-[100%] p-[10px] mt-[10px] rounded-[5px] border border-red-900" 
+                type="number" id="weight" placeholder="Enter your weight in kilograms"> <br>
+
+                <label class="block mt-2 font-bold" for = "height">Please enter your height: </label> 
+                <input class="text-center w-[100%] p-[10px] mt-[10px] rounded-[5px] border border-red-900" 
+                type="number" id="height" placeholder="Enter your height in centimeters"> <br>
+
+                <button class="bg-yellow-100 text-center w-[100%] p-[10px] mt-[10px] rounded-[5px] border border-red-900 text-lg" 
+                onclick ="Calculate()"> Calculate </button>
+            </div>
+            <p id="result" class="mt-5 text-center text-lg font-bold text-[#800000]"> </p>
+        </form>
+    </body>
+</html>
