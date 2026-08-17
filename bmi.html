@@ -8,24 +8,25 @@
     </head>
     
     <body class="bg-yellow-100">
-        <form>
-            <div class="w-[370px] bg-white p-5 mx-auto mt-[50px] rounded-[10px]">
-                <h1 class="text-center text-maroon text-2xl font-bold"> 
+        <h1 class="bg-[#800000] text-center text-yellow-100 text-xl sm:text-2xl md:text-3xl font-bold py-10"> BMI calculator </h1>
+        <form class="w-full max-w-md mx-auto px-4">
+            <div class="w-full bg-white p-5 md:p-6 mx-auto mt-8 md:mt-12 rounded-[10px]">
+                <h2 class="text-left md:text-center text-[#800000] text-xl sm:text-2xl md:text-3xl font-bold"> 
                     What is my BMI? Calculate your body mass index below: 
-                </h1>
+                </h2>
 
-                <label class="block mt-2 font-bold" for = "weight" >Please enter your weight: </label> 
-                <input class="text-center w-[100%] p-[10px] mt-[10px] rounded-[5px] border border-red-900" 
+                <label class="block mt-2 font-bold text-base md:text-lg" for = "weight" >Please enter your weight: </label> 
+                <input class="text-left md:text-center w-full p-3 md:p-4 mt-2 rounded-[5px] border border-red-900" 
                 type="number" id="weight" placeholder="Enter your weight in kilograms"> <br>
 
-                <label class="block mt-2 font-bold" for = "height">Please enter your height: </label> 
-                <input class="text-center w-[100%] p-[10px] mt-[10px] rounded-[5px] border border-red-900" 
+                <label class="block mt-2 font-bold text-base md:text-lg" for = "height">Please enter your height: </label> 
+                <input class="text-left md:text-center w-full p-3 md:p-4 mt-2 rounded-[5px] border border-red-900" 
                 type="number" id="height" placeholder="Enter your height in centimeters"> <br>
 
-                <button class="bg-yellow-100 text-center w-[100%] p-[10px] mt-[10px] rounded-[5px] border border-red-900 text-lg" 
-                onclick ="Calculate()"> Calculate </button>
+                <button class="bg-yellow-100 text-left md:text-center w-full p-3 md:p-4 mt-2 rounded-[5px] border border-red-900 text-lg" 
+                type="button" onclick ="Calculate()"> Calculate </button>
             </div>
-            <p id="result" class="mt-5 text-center text-lg font-bold text-[#800000]"> </p>
+            <p id="result" class="mt-5 text-left md:text-center text-lg font-bold text-[#800000]"> </p>
         </form>
     </body>
 </html>
